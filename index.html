@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>The King Mendhak's Royal Decree</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>A Royal Decree from a Humble King</h1>
+    <p class="subtitle">For my dearest princess.</p>
+    <button id="audio-btn" aria-label="Play audio message"><span id="audio-icon">🔊</span></button>
+    <audio id="audio-message" src="assets/audio/message.mp3"></audio>
+  </section>
+  
+  <!-- The Pond's Beginning -->
+  <section class="pond">
+    <img src="assets/img/pond.png" alt="A humble pond illustration" class="pond-illustration fade-in">
+    <div class="gallery">
+      <figure class="fade-in">
+        <img src="assets/img/date1.jpg" alt="Date 1">
+        <figcaption>Our first magical evening together.</figcaption>
+      </figure>
+      <figure class="fade-in">
+        <img src="assets/img/date2.jpg" alt="Date 2">
+        <figcaption>Where you made me laugh endlessly.</figcaption>
+      </figure>
+      <figure class="fade-in">
+        <img src="assets/img/date3.jpg" alt="Date 3">
+        <figcaption>The moment I knew you were special.</figcaption>
+      </figure>
+    </div>
+  </section>
+  
+  <!-- The Journey Timeline -->
+  <section class="journey">
+    <h2>Our Journey</h2>
+    <div class="timeline">
+      <div class="milestone fade-in">
+        <img src="assets/img/crown.svg" alt="Crown icon">
+        <span class="desc">The First Kiss</span>
+      </div>
+      <div class="milestone fade-in">
+        <img src="assets/img/star.svg" alt="Star icon">
+        <span class="desc">Our Trip to Wonderland</span>
+      </div>
+      <div class="milestone fade-in">
+        <img src="assets/img/heart.svg" alt="Heart icon">
+        <span class="desc">Silly Dances in the Kitchen</span>
+      </div>
+    </div>
+  </section>
+  
+  <!-- The Kingdom -->
+  <section class="kingdom">
+    <img src="assets/img/castle.png" alt="A grand castle" class="castle-bg">
+    <div class="video-wrapper fade-in">
+      <video id="proposal-video" controls poster="assets/img/video-poster.jpg">
+        <source src="assets/video/proposal.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+  
+  <!-- The Proposal (hidden until bottom) -->
+  <section class="proposal" id="proposal-section">
+    <div class="proposal-message">
+      <h2>My dearest princess, you've made my pond a kingdom.<br>Will you live your life with me?</h2>
+      <button id="yes-btn">Yes, my King</button>
+    </div>
+  </section>
+  
+  <!-- Confetti Canvas -->
+  <canvas id="confetti-canvas"></canvas>
+  
+  <script src="js/main.js"></script>
+</body>
+</html>
